@@ -1,0 +1,72 @@
+<section id="oracle-home-intro" class="orhi" aria-labelledby="orhi-title">
+  <style>
+    #oracle-home-intro.orhi{
+      --ink:#0a090b;--ink2:#121014;--ivory:#f3eee5;--paper:#e8dfd3;--muted:#b9ada1;
+      --wine:#7d2345;--rose:#c05278;--gold:#b99a62;--line:rgba(232,223,211,.16);
+      position:relative;isolation:isolate;overflow:hidden;background:
+      radial-gradient(circle at 78% 12%,rgba(125,35,69,.22),transparent 34rem),
+      radial-gradient(circle at 18% 82%,rgba(185,154,98,.10),transparent 26rem),var(--ink);
+      color:var(--ivory);border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+    }
+    #oracle-home-intro *{box-sizing:border-box}
+    #oracle-home-intro .orhi__inner{width:min(1240px,calc(100% - 40px));margin:0 auto;display:grid;grid-template-columns:minmax(0,1.02fr) minmax(320px,.98fr);gap:clamp(36px,7vw,100px);align-items:center;padding:clamp(72px,10vw,138px) 0}
+    #oracle-home-intro .orhi__eyebrow{margin:0 0 18px;color:var(--gold);font:700 12px/1.2 Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase}
+    #oracle-home-intro h1{margin:0;max-width:760px;color:var(--ivory);font-family:Georgia,"Times New Roman",serif;font-size:clamp(48px,7.4vw,104px);font-weight:400;line-height:.91;letter-spacing:-.045em;text-wrap:balance}
+    #oracle-home-intro h1 em{color:var(--rose);font-weight:400}
+    #oracle-home-intro .orhi__lead{max-width:700px;margin:26px 0 0;color:var(--paper);font-family:Georgia,"Times New Roman",serif;font-size:clamp(20px,2vw,30px);line-height:1.45}
+    #oracle-home-intro .orhi__copy{max-width:650px;margin:20px 0 0;color:var(--muted);font-size:16px;line-height:1.75}
+    #oracle-home-intro .orhi__actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+    #oracle-home-intro .orhi__button{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:14px 18px;border:1px solid var(--gold);color:var(--ivory)!important;text-decoration:none!important;font-size:12px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;transition:.2s ease}
+    #oracle-home-intro .orhi__button:hover,#oracle-home-intro .orhi__button:focus-visible{background:var(--gold);color:var(--ink)!important}
+    #oracle-home-intro .orhi__button--quiet{border-color:var(--line)}
+    #oracle-home-intro .orhi__visual{position:relative;min-height:560px}
+    #oracle-home-intro .orhi__media{position:absolute;inset:0 0 58px 42px;overflow:hidden;border:1px solid var(--line);background:linear-gradient(145deg,#1a151a,#0d0b0d)}
+    #oracle-home-intro .orhi__media img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.8) contrast(1.05)}
+    #oracle-home-intro .orhi__media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,9,11,.05),rgba(10,9,11,.55));pointer-events:none}
+    #oracle-home-intro .orhi__fallback{position:absolute;inset:0;display:grid;place-items:center;background:
+      radial-gradient(circle at 50% 46%,rgba(192,82,120,.23),transparent 18%),
+      radial-gradient(circle at 50% 50%,rgba(185,154,98,.05),transparent 45%)}
+    #oracle-home-intro .orhi__media.or-media-slot--loaded .orhi__fallback{display:none}
+    #oracle-home-intro .orhi__sigil{position:relative;width:58%;aspect-ratio:1;border:1px solid rgba(185,154,98,.52);border-radius:50%}
+    #oracle-home-intro .orhi__sigil::before,#oracle-home-intro .orhi__sigil::after{content:"";position:absolute;border-radius:50%;border:1px solid rgba(243,238,229,.34)}
+    #oracle-home-intro .orhi__sigil::before{inset:16%}
+    #oracle-home-intro .orhi__sigil::after{inset:32%;box-shadow:0 0 56px rgba(192,82,120,.22)}
+    #oracle-home-intro .orhi__note{position:absolute;right:0;bottom:0;width:min(320px,78%);padding:22px 24px;border:1px solid var(--gold);background:rgba(10,9,11,.92);backdrop-filter:blur(12px)}
+    #oracle-home-intro .orhi__note strong{display:block;margin-bottom:7px;color:var(--gold);font-size:11px;letter-spacing:.13em;text-transform:uppercase}
+    #oracle-home-intro .orhi__note span{color:var(--paper);font-family:Georgia,"Times New Roman",serif;font-size:19px;line-height:1.35}
+    @media(max-width:860px){
+      #oracle-home-intro .orhi__inner{grid-template-columns:1fr;padding:68px 0}
+      #oracle-home-intro .orhi__visual{min-height:430px}
+      #oracle-home-intro .orhi__media{inset:0 0 48px 0}
+    }
+    @media(max-width:520px){
+      #oracle-home-intro .orhi__inner{width:min(100% - 28px,1240px)}
+      #oracle-home-intro h1{font-size:clamp(46px,15vw,68px)}
+      #oracle-home-intro .orhi__button{width:100%}
+      #oracle-home-intro .orhi__visual{min-height:380px}
+    }
+  </style>
+
+  <div class="orhi__inner">
+    <div class="orhi__copyblock">
+      <p class="orhi__eyebrow" data-or-content-slot="home-intro-eyebrow" data-or-content-type="text" data-or-content-label="Home intro eyebrow">The Oracle Room · Brisbane &amp; online</p>
+      <h1 id="orhi-title" data-or-content-slot="home-intro-heading" data-or-content-type="richtext" data-or-content-label="Home intro heading">Psychic &amp; tarot readings with room to <em>think.</em></h1>
+      <p class="orhi__lead" data-or-content-slot="home-intro-lead" data-or-content-type="textarea" data-or-content-label="Home intro lead">Thoughtful psychic readings for clarity, change, relationships, creative questions and the moments when life refuses to stay neatly labelled.</p>
+      <p class="orhi__copy" data-or-content-slot="home-intro-copy" data-or-content-type="textarea" data-or-content-label="Home intro copy">Kathleen Cameron offers private online readings and selected in-person psychic and tarot readings in Brisbane. The approach is intuitive, reflective and grounded in conversation rather than performance.</p>
+      <div class="orhi__actions">
+        <a class="orhi__button" href="/book-online/" data-or-content-slot="home-intro-primary-cta" data-or-content-type="text" data-or-content-label="Home intro primary button">Book an online reading</a>
+        <a class="orhi__button orhi__button--quiet" href="/in-person/" data-or-content-slot="home-intro-secondary-cta" data-or-content-type="text" data-or-content-label="Home intro secondary button">Find me in person</a>
+      </div>
+    </div>
+
+    <div class="orhi__visual" aria-label="Oracle Room visual">
+      <div class="orhi__media" data-or-media-slot="home-intro-image" data-or-media-type="image" data-or-media-label="Home intro image">
+        <div class="orhi__fallback" aria-hidden="true"><span class="orhi__sigil"></span></div>
+      </div>
+      <div class="orhi__note">
+        <strong data-or-content-slot="home-intro-note-label" data-or-content-type="text" data-or-content-label="Home intro note label">A quieter reading space</strong>
+        <span data-or-content-slot="home-intro-note" data-or-content-type="textarea" data-or-content-label="Home intro note">Less theatre. More signal. Something you can actually sit with afterwards.</span>
+      </div>
+    </div>
+  </div>
+</section>
