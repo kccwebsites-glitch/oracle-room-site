@@ -1,0 +1,25 @@
+:root {
+  --or-ink: #0a090b;
+  --or-ink-soft: #121014;
+  --or-ivory: #f3eee5;
+  --or-paper: #e8dfd3;
+  --or-muted: #b9ada1;
+  --or-wine: #7d2345;
+  --or-rose: #c05278;
+  --or-gold: #b99a62;
+  --or-line: rgba(232, 223, 211, 0.18);
+
+  --or-serif: "Iowan Old Style", "Baskerville", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  --or-sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --or-content-wide: 1280px;
+  --or-content: 1180px;
+  --or-gutter: clamp(18px, 4vw, 42px);
+  --or-section-space: clamp(64px, 9vw, 128px);
+}
+
+/*
+Working palette only. These are shared component tokens, not an instruction
+to override every Namaha theme control. Refine with Kathleen as the visual
+system settles.
+*/
