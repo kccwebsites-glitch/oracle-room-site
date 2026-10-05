@@ -1,0 +1,29 @@
+<section id="oracle-home-close" class="orhc" aria-labelledby="orhc-title">
+  <style>
+    #oracle-home-close.orhc{--ink:#0a090b;--ivory:#f3eee5;--paper:#e8dfd3;--muted:#b9ada1;--wine:#7d2345;--rose:#c05278;--gold:#b99a62;--line:rgba(232,223,211,.16);position:relative;overflow:hidden;background:
+      radial-gradient(circle at 20% 50%,rgba(125,35,69,.22),transparent 30rem),
+      radial-gradient(circle at 86% 20%,rgba(185,154,98,.08),transparent 24rem),var(--ink);color:var(--ivory)}
+    #oracle-home-close *{box-sizing:border-box}
+    #oracle-home-close .orhc__inner{position:relative;z-index:2;width:min(1100px,calc(100% - 40px));margin:0 auto;padding:clamp(88px,12vw,170px) 0;text-align:center}
+    #oracle-home-close .orhc__mark{width:70px;height:70px;margin:0 auto 28px;border:1px solid rgba(185,154,98,.55);border-radius:50%;display:grid;place-items:center;color:var(--rose);font-family:Georgia,serif;font-size:30px}
+    #oracle-home-close .orhc__eyebrow{margin:0 0 18px;color:var(--gold);font:700 12px/1.2 Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase}
+    #oracle-home-close h2{max-width:880px;margin:0 auto;font-family:Georgia,"Times New Roman",serif;font-size:clamp(44px,6vw,86px);font-weight:400;line-height:.98;letter-spacing:-.04em;text-wrap:balance}
+    #oracle-home-close .orhc__copy{max-width:700px;margin:24px auto 0;color:var(--muted);font-size:17px;line-height:1.75}
+    #oracle-home-close .orhc__actions{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:32px}
+    #oracle-home-close .orhc__button{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:14px 18px;border:1px solid var(--gold);color:var(--ivory)!important;text-decoration:none!important;font-size:12px;font-weight:700;letter-spacing:.13em;text-transform:uppercase}
+    #oracle-home-close .orhc__button:hover{background:var(--gold);color:var(--ink)!important}
+    #oracle-home-close .orhc__button--quiet{border-color:var(--line)}
+    @media(max-width:520px){#oracle-home-close .orhc__inner{width:min(100% - 28px,1100px)}#oracle-home-close .orhc__button{width:100%}}
+  </style>
+
+  <div class="orhc__inner">
+    <div class="orhc__mark" aria-hidden="true">◐</div>
+    <p class="orhc__eyebrow" data-or-content-slot="home-close-eyebrow" data-or-content-type="text" data-or-content-label="Closing eyebrow">The Oracle Room</p>
+    <h2 id="orhc-title" data-or-content-slot="home-close-heading" data-or-content-type="text" data-or-content-label="Closing heading">You do not need to know exactly what you are asking before you begin.</h2>
+    <p class="orhc__copy" data-or-content-slot="home-close-copy" data-or-content-type="textarea" data-or-content-label="Closing copy">Sometimes the useful question only appears once the reading has started. Bring what you know, what you feel, or simply the part that will not leave you alone.</p>
+    <div class="orhc__actions">
+      <a class="orhc__button" href="/book-online/" data-or-content-slot="home-close-primary-cta" data-or-content-type="text" data-or-content-label="Closing primary button">Book online</a>
+      <a class="orhc__button orhc__button--quiet" href="/readings/" data-or-content-slot="home-close-secondary-cta" data-or-content-type="text" data-or-content-label="Closing secondary button">Explore all readings</a>
+    </div>
+  </div>
+</section>
