@@ -5,7 +5,7 @@
  * Canonical component structure lives in GitHub; WordPress owns chosen media.
  *
  * Code Snippets FREE: add as one PHP snippet and run everywhere.
- * Version: 0.1.0
+ * Version: 0.1.1
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -531,6 +531,12 @@ add_action( 'wp_footer', function() {
                 if (data.fit && data.fit !== 'default') {
                     target.querySelectorAll('img').forEach((img) => {
                         img.style.setProperty('object-fit', data.fit, 'important');
+
+                        if (data.type === 'image') {
+                            img.style.setProperty('width', '100%', 'important');
+                            img.style.setProperty('height', '100%', 'important');
+                            img.style.setProperty('display', 'block', 'important');
+                        }
                     });
                 }
 
