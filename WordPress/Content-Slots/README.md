@@ -65,3 +65,22 @@ Do not use visual-position names such as `left-text` or `box-3` unless the conte
 6. Approved permanent copy changes can later be folded into GitHub defaults.
 
 The slot engine is site infrastructure and should live in the WordPress/ folder in this repository, separate from page objects.
+
+
+## Installation with Code Snippets Free
+
+The Oracle Room uses the free Code Snippets plugin.
+
+1. In WordPress go to **Snippets → Add New**.
+2. Create a new PHP snippet.
+3. Copy the contents of the relevant PHP file from this repository.
+4. Do **not** add an opening `<?php` tag when pasting into Code Snippets.
+5. Set the snippet to **Run Everywhere**.
+6. Save and activate it.
+
+Current infrastructure snippets:
+
+- `WordPress/Content-Slots/oracle-room-content-slots.php`
+- `WordPress/Media-Slots/oracle-room-media-slots.php`
+
+JSON import/export is not part of the free-plugin workflow and should not be relied on.
