@@ -1,0 +1,52 @@
+<section id="oracle-home-approach" class="orha" aria-labelledby="orha-title">
+  <style>
+    #oracle-home-approach.orha{--ink:#0a090b;--ivory:#f3eee5;--paper:#e8dfd3;--muted:#b9ada1;--rose:#c05278;--gold:#b99a62;--line:rgba(232,223,211,.16);background:var(--ink);color:var(--ivory);border-bottom:1px solid var(--line)}
+    #oracle-home-approach *{box-sizing:border-box}
+    #oracle-home-approach .orha__inner{width:min(1240px,calc(100% - 40px));margin:0 auto;display:grid;grid-template-columns:minmax(320px,.8fr) minmax(0,1.2fr);gap:clamp(42px,8vw,120px);padding:clamp(72px,10vw,138px) 0;align-items:center}
+    #oracle-home-approach .orha__portrait{position:relative;min-height:620px;border:1px solid var(--line);overflow:hidden;background:linear-gradient(145deg,#171217,#0d0b0d)}
+    #oracle-home-approach .orha__portrait img{width:100%;height:100%;object-fit:cover;display:block}
+    #oracle-home-approach .orha__portrait-fallback{position:absolute;inset:0;display:grid;place-items:center;color:rgba(185,154,98,.38);font-family:Georgia,serif;font-size:72px}
+    #oracle-home-approach .orha__portrait.or-media-slot--loaded .orha__portrait-fallback{display:none}
+    #oracle-home-approach .orha__portrait::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 48%,rgba(10,9,11,.52));pointer-events:none}
+    #oracle-home-approach .orha__copyblock{max-width:690px}
+    #oracle-home-approach .orha__eyebrow{margin:0 0 16px;color:var(--gold);font:700 12px/1.2 Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase}
+    #oracle-home-approach h2{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(44px,5.3vw,76px);font-weight:400;line-height:.98;letter-spacing:-.035em}
+    #oracle-home-approach .orha__lead{margin:26px 0 0;color:var(--paper);font-family:Georgia,"Times New Roman",serif;font-size:clamp(22px,2.5vw,34px);line-height:1.35}
+    #oracle-home-approach .orha__body{margin:22px 0 0;color:var(--muted);font-size:16px;line-height:1.8}
+    #oracle-home-approach .orha__themes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;margin-top:34px;background:var(--line);border:1px solid var(--line)}
+    #oracle-home-approach .orha__theme{padding:18px;background:#100e10}
+    #oracle-home-approach .orha__theme strong{display:block;color:var(--ivory);font-family:Georgia,serif;font-size:18px;font-weight:400}
+    #oracle-home-approach .orha__theme span{display:block;margin-top:5px;color:var(--muted);font-size:13px;line-height:1.5}
+    #oracle-home-approach .orha__link{display:inline-block;margin-top:28px;padding-bottom:4px;border-bottom:1px solid var(--rose);color:var(--paper)!important;text-decoration:none!important;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+    @media(max-width:820px){
+      #oracle-home-approach .orha__inner{grid-template-columns:1fr}
+      #oracle-home-approach .orha__portrait{min-height:460px}
+    }
+    @media(max-width:520px){
+      #oracle-home-approach .orha__inner{width:min(100% - 28px,1240px)}
+      #oracle-home-approach .orha__themes{grid-template-columns:1fr}
+    }
+  </style>
+
+  <div class="orha__inner">
+    <div class="orha__portrait" data-or-media-slot="home-approach-image" data-or-media-type="image" data-or-media-label="Kathleen portrait or atmospheric image">
+      <div class="orha__portrait-fallback" aria-hidden="true">◐</div>
+    </div>
+
+    <div class="orha__copyblock">
+      <p class="orha__eyebrow" data-or-content-slot="home-approach-eyebrow" data-or-content-type="text" data-or-content-label="Approach eyebrow">The approach</p>
+      <h2 id="orha-title" data-or-content-slot="home-approach-heading" data-or-content-type="text" data-or-content-label="Approach heading">Not a performance. A conversation with the pattern underneath.</h2>
+      <p class="orha__lead" data-or-content-slot="home-approach-lead" data-or-content-type="textarea" data-or-content-label="Approach lead">Readings are intuitive and symbolic, but the point is not to make your life more mysterious. It is to illuminate what may already be moving through it.</p>
+      <p class="orha__body" data-or-content-slot="home-approach-copy" data-or-content-type="textarea" data-or-content-label="Approach body copy">Kathleen’s practice draws on tarot, psychic perception, image, story and conversation. You can arrive with a specific question or simply with the sense that something needs to be looked at differently.</p>
+
+      <div class="orha__themes" aria-label="Common reading themes">
+        <div class="orha__theme"><strong>Clarity</strong><span>When the situation is noisy but the underlying question is not.</span></div>
+        <div class="orha__theme"><strong>Relationships</strong><span>Patterns, dynamics, choices and what is asking to be understood.</span></div>
+        <div class="orha__theme"><strong>Transitions</strong><span>Threshold moments, endings, beginnings and the territory between them.</span></div>
+        <div class="orha__theme"><strong>Creative &amp; work life</strong><span>Direction, confidence, blocks, opportunities and the shape of what comes next.</span></div>
+      </div>
+
+      <a class="orha__link" href="/about-kathleen/" data-or-content-slot="home-approach-cta" data-or-content-type="text" data-or-content-label="Approach button">About Kathleen</a>
+    </div>
+  </div>
+</section>
